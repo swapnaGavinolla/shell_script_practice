@@ -1,2 +1,5 @@
 #!/bib/bash
-echo "hiiiii nani"
+a=2
+b=4
+c=(($a+$b))
+echo "$c"
