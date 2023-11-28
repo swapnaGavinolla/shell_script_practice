@@ -10,7 +10,7 @@
 #     exit 1
 # fi
 user=$(id -u)
-if [ $user ne 0 ]
+if [ $user -ne 0 ]
 then 
     echo "get root user access"
     exit 1
