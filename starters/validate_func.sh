@@ -1,5 +1,5 @@
 #!/bin/bash
-yum install nginx -y 
+#yum install nginx -y 
 Validate $? "nginx"
 Validate(){
     if [ $1 -ne 0 ]
