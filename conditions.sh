@@ -9,7 +9,7 @@
 #     echo "$var_one is not greater than $var_two "
 #     exit 1
 # fi
-user_id = $( id-u )
+user_id = $(id-u)
 if [$user_id -ne 0 ]
 then 
     echo "get root user access"
