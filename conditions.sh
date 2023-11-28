@@ -1,4 +1,4 @@
-#!/bib/bash
+!/bib/bash
 #var_one=$1
 # var_two=$2
 # if [ $var_one -gt $var_two ]
