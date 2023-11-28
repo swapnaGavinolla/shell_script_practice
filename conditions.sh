@@ -25,9 +25,9 @@ N="\e[0m"
 yum install nginx -y 
 if [ $? -ne 0 ]
 then
-    echo "nginx is not installed $R failre $N"
+    -e echo "nginx is not installed $R failre $N"
     exit 1
 else
-    echo "nginx is installed $G success $N"
+    -e echo "nginx is installed $G success $N"
     exit 1
 fi
