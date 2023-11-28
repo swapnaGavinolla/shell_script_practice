@@ -1,4 +1,7 @@
 !/bib/bash
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 #var_one=$1
 # var_two=$2
 # if [ $var_one -gt $var_two ]
@@ -22,9 +25,9 @@
 yum install nginx -y 
 if [ $? -ne 0 ]
 then
-    echo "nginx is not installed"
+    echo "nginx is not installed $R failre $N"
     exit 1
 else
-    echo "nginx is installed"
+    echo "nginx is installed $G success $N"
     exit 1
 fi
