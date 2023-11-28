@@ -9,22 +9,22 @@
 #     echo "$var_one is not greater than $var_two "
 #     exit 1
 # fi
-user=$(id -u)
-if [ $user -ne 0 ]
-then 
-    echo "get root user access"
-    exit 1
-else
-    echo "go ahead"
-fi
-
-
-# yum install nginx -y 
-# if [ $? ne 0 ]
-# then
-#     echo "nginx is not installed"
+# user=$(id -u)
+# if [ $user -ne 0 ]
+# then 
+#     echo "get root user access"
 #     exit 1
 # else
-#     echo "nginx is not installed"
-#     exit 1
+#     echo "go ahead"
 # fi
+
+
+yum install nginx -y 
+if [ $? ne 0 ]
+then
+    echo "nginx is not installed"
+    exit 1
+else
+    echo "nginx is not installed"
+    exit 1
+fi
