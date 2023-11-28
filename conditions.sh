@@ -20,11 +20,11 @@
 
 
 yum install nginx -y 
-if [ $? ne 0 ]
+if [ $? -ne 0 ]
 then
     echo "nginx is not installed"
     exit 1
 else
-    echo "nginx is not installed"
+    echo "nginx is installed"
     exit 1
 fi
