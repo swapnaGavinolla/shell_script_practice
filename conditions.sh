@@ -1,33 +1,14 @@
-!/bib/bash
-R="\e[31m"
-G="\e[32m"
-N="\e[0m"
-#var_one=$1
-# var_two=$2
-# if [ $var_one -gt $var_two ]
-# then  
-#     echo "$var_one is greater than $var_two "
-#     exit 1
-# else
-#     echo "$var_one is not greater than $var_two "
-#     exit 1
-# fi
-# user=$(id -u)
-# if [ $user -ne 0 ]
-# then 
-#     echo "get root user access"
-#     exit 1
-# else
-#     echo "go ahead"
-# fi
+ !/bib/bash
 
-
-yum install nginx -y 
-if [ $? -ne 0 ]
-then
-    echo -e "nginx is not installed $R failre $N"
+var_one=$1
+var_two=$2
+if [ $var_one -gt $var_two ]
+then  
+    echo "$var_one is greater than $var_two "
     exit 1
 else
-    echo -e "nginx is installed $G success $N"
+    echo "$var_one is not greater than $var_two "
     exit 1
 fi
+
+

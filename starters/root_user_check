@@ -1,0 +1,9 @@
+
+user=$(id -u)
+if [ $user -ne 0 ]
+then 
+    echo "get root user access"
+    exit 1
+else
+    echo "go ahead"
+fi
