@@ -6,8 +6,8 @@ echo "the sum of the given two numbers : $var_sum"
 if ($var_one gt $var_two)
 then  
     echo "$var_one is greater than $var_two "
-    exit1
+    exit 1
 else
     echo "$var_one is not greater than $var_two "
-    exit1
+    exit 1
 fi
