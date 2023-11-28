@@ -1,7 +1,7 @@
 #!/bin/bash
 #yum install nginx -y 
-Validate $? "nginx"
-Validate(){
+check $? "nginx"
+check(){
 if [ $1 -ne 0 ]
 then
     echo -e "installation of $2 $R failre $N"
