@@ -12,5 +12,6 @@
 # fi
 # }
 VALIDATE(){
-    
+    echo "hiiiiii"
 }
+validate()
