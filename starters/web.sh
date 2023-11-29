@@ -18,8 +18,10 @@ yum install nginx -y &>> LOGFILE
 VALIDATE $? "nginx"
 
 systemctl enable nginx 
+echo "enabled nginx"
 
 systemctl start nginx
+echo "started nginx"
 
 rm -rf /usr/share/nginx/html/*
 
@@ -31,6 +33,7 @@ cd /usr/share/nginx/html
 
 
 unzip /tmp/web.zip &>> LOGFILE
+echo "unzipped"
 
 #cp /root/shell_script_practice/components/roboshop.conf  /etc/nginx/default.d/roboshop.conf 
 
