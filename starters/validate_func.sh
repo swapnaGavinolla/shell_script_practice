@@ -4,7 +4,7 @@ G="\e[32m"
 N="\e[0m"
 #Logfile=
 DATE=$(date)
-Scriptname=$0
+LOGFILE= /tmp/Shell.DATE
 echo "$DATE   $Scriptname"
 VALIDATE(){
 if [ $1 -ne 0 ]
@@ -16,11 +16,11 @@ else
 fi
 }
 
-# yum install nginx -y 
-# VALIDATE $? "nginx"
+yum install nginx -y <<& LOGFILE
+VALIDATE $? "nginx" 
 
-# yum install postfix -y 
-# VALIDATE $? "postfix"
+yum install postfix -y <<& LOGFILE
+VALIDATE $? "postfix"
 
-# yum install mongod -y 
-# VALIDATE $? "mongod"
+yum install mongod -y <<& LOGFILE
+VALIDATE $? "mongod"
