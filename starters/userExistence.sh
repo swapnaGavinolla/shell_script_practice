@@ -1,7 +1,8 @@
 #!/bin/bash
 
 id(){
-    if [ (id nani) -ne 0]
+    id nani 
+    if [ $? -ne 0 ]
     then 
         useradd nani
         echo "added"
