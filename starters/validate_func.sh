@@ -1,5 +1,7 @@
 #!/bin/bash
-
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 
 VALIDATE(){
 if [ $1 -ne 0 ]
@@ -16,7 +18,7 @@ yum install nginx -y
 VALIDATE $? "nginx"
 
 yum install postfix -y 
-VALIDATE $? "nginx"
+VALIDATE $? "postfix"
 
 yum install mongod -y 
-VALIDATE $? "nginx"
+VALIDATE $? "monod"
