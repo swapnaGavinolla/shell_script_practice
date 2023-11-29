@@ -14,3 +14,9 @@ fi
 
 yum install nginx -y 
 VALIDATE $? "nginx"
+
+yum install postfix -y 
+VALIDATE $? "nginx"
+
+yum install mongod -y 
+VALIDATE $? "nginx"
