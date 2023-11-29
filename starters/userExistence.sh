@@ -1,6 +1,6 @@
 #!/bin/bash
 id nani &>> Logfile
-if ($? -ne 0)
+if [ $? -ne 0 ]
 then 
     echo "creating the user"
     useradd nani
