@@ -15,12 +15,12 @@ else
     echo -e "installation of $2 $G success $N"
 fi
 }
-
-yum install nginx -y <<& LOGFILE
+ 
+yum install nginx -y >>&LOGFILE
 VALIDATE $? "nginx" 
 
-yum install postfix -y <<& LOGFILE
+yum install postfix -y >>&LOGFILE
 VALIDATE $? "postfix"
 
-yum install mongod -y <<& LOGFILE
+yum install mongod -y >>&LOGFILE
 VALIDATE $? "mongod"
