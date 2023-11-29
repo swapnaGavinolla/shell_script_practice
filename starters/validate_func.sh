@@ -11,6 +11,6 @@
 #     exit 1
 # fi
 # }
-validate(){
+VALIDATE(){
     
 }
