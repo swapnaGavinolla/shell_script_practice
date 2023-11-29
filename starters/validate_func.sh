@@ -3,7 +3,7 @@ R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 #Logfile=
-DATEe=$(date)
+DATE=$(date)
 Scriptname=$0
 echo "$DATE   $Scriptname"
 VALIDATE(){
