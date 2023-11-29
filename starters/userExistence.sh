@@ -8,8 +8,8 @@ id () {
         echo "hhh"
         echo "creating the $1 "
         
-    else
-        echo "user $1  alrady exists"
+    # else
+    #     echo "user $1  alrady exists"
 
     fi
 } 
