@@ -35,7 +35,7 @@ cd /usr/share/nginx/html
 unzip /tmp/web.zip &>> LOGFILE
 echo "unzipped"
 
-cp /root/shell_script_practice/components/roboshop.conf  /etc/nginx/default.d/roboshop.conf 
+cp /root/shell_script_practice/starters/roboshop.conf  /etc/nginx/default.d/roboshop.conf 
 echo "copied"
 
 systemctl restart nginx 
