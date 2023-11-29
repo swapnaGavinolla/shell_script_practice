@@ -4,7 +4,7 @@ id () {
     id $1 &>> Logfile
     if [ $? -ne 0 ]
     then 
-        useradd nani
+        useradd $1
         echo "creating the $1 "
         
     else
