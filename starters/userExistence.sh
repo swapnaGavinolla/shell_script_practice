@@ -5,6 +5,7 @@ id () {
     if [ $? -ne 0 ]
     then 
         useradd $1
+        echo "hhh"
         echo "creating the $1 "
         
     else
