@@ -1,7 +1,7 @@
 #!/bin/bash
 
 id(){
-    id nani 
+    id fg
     if [ $? -ne 0 ]
     then 
         useradd nani
