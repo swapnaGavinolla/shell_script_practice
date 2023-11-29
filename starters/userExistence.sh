@@ -13,4 +13,4 @@ id () {
     fi
 } 
 
-id nani "chooopu"
+id chooopu
