@@ -3,9 +3,7 @@
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
-
-DATE=$(date)
-LOGFILE= tmp/Shell_DATE.log
+LOGFILE= /tmp/Shell.log
 
 VALIDATE(){
 if [ $1 -ne 0 ]
