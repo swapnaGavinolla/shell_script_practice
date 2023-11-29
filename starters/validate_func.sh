@@ -1,11 +1,12 @@
 #!/bin/bash
+
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
-#Logfile=
+
 DATE=$(date)
-LOGFILE= /tmp/Shell.DATE
-echo "$DATE   $Scriptname"
+LOGFILE= home/centos/tmp/Shell_DATE.log
+
 VALIDATE(){
 if [ $1 -ne 0 ]
 then
@@ -16,11 +17,11 @@ else
 fi
 }
  
-yum install nginx -y >> LOGFILE
+yum install nginx -y &>> LOGFILE
 VALIDATE $? "nginx" 
 
-yum install postfix -y >> LOGFILE
+yum install postfix -y &>> LOGFILE
 VALIDATE $? "postfix"
 
-yum install redis -y >> LOGFILE
+yum install redis -y &>> LOGFILE
 VALIDATE $? "redis"
