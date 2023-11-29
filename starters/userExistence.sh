@@ -1,7 +1,7 @@
 #!/bin/bash
 
 id () {
-    id nani &>> Logfile
+    id $1 &>> Logfile
     if [ $? -ne 0 ]
     then 
         useradd nani
@@ -13,4 +13,4 @@ id () {
     fi
 } 
 
-id nani "nani"
+id nani "chooopu"
