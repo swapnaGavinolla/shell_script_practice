@@ -22,5 +22,5 @@ VALIDATE $? "nginx"
 yum install postfix -y >> LOGFILE
 VALIDATE $? "postfix"
 
-yum install mongod -y >> LOGFILE
-VALIDATE $? "mongod"
+yum install redis -y >> LOGFILE
+VALIDATE $? "redis"
