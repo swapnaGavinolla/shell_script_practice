@@ -7,6 +7,8 @@ id(){
         useradd nani
         echo "added"
         exit 1
+    else
+        echo "user already exists"
     fi
     echo "fjdgk"
 }
