@@ -10,7 +10,6 @@ then
     exit 1
 else
     echo -e "installation of $2 $G success $N"
-    exit 1
 fi
 }
 
