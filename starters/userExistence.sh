@@ -9,3 +9,5 @@ else
     echo "user alrady exists"
     exit 1
 fi
+
+echo "hiiiiiii"
