@@ -3,7 +3,8 @@ R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 #Logfile=
-DAte=$(date:%Y-%m-%d )
+DAte=$(date)
+echo "$DATE"
 VALIDATE(){
 if [ $1 -ne 0 ]
 then
