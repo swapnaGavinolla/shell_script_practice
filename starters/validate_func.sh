@@ -3,7 +3,7 @@
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
-LOGFILE= /tmp/Shell.log
+#LOGFILE= /tmp/Shell.log
 
 VALIDATE(){
 if [ $1 -ne 0 ]
@@ -21,5 +21,5 @@ VALIDATE $? "nginx"
 yum install postfix -y &>> LOGFILE
 VALIDATE $? "postfix"
 
-yum install redis -y &>> LOGFILE
+yum install cart -y &>> LOGFILE
 VALIDATE $? "redis"
