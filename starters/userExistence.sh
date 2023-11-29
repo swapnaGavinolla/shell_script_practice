@@ -1,12 +1,15 @@
 #!/bin/bash
-id nani &>> Logfile
-if [ $? -ne 0 ]
-then 
-    echo "creating the user"
-    useradd nani
-    
-else
-    echo "user alrady exists"
-fi
 
-echo "hiiiiiii"
+id () {
+    id nani &>> Logfile
+    if [ $? -ne 0 ]
+    then 
+        echo "creating the $1 "
+        useradd nani
+        
+    else
+        echo "user alrady exists"
+    fi
+} 
+
+id nani "nani"
