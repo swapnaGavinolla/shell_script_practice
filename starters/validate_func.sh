@@ -21,5 +21,5 @@ VALIDATE $? "nginx"
 yum install postfix -y &>> LOGFILE
 VALIDATE $? "postfix"
 
-yum install cart -y &>> LOGFILE
+yum install mysql -y &>> LOGFILE
 VALIDATE $? "redis"
