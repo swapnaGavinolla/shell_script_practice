@@ -48,6 +48,11 @@ check_user roboshop
 
 check_directory_existence /app
 
+curl -o /tmp/catalogue.zip https://roboshop-builds.s3.amazonaws.com/catalogue.zip  &>> LOGFILE
+VALIDATE $? "downloading zip files"
+
+cd /app 
+
 unzip /tmp/catalogue.zip  
 VALIDATE $? "unzipping"
 
