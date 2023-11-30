@@ -13,7 +13,7 @@
 #     echo "fjdgk"
 # }
 
-user_existence = (id nani)
+user_existence = id nani
 echo "$user_existence"
 # if [ $? -ne 0 ]
 # then 
