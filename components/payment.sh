@@ -53,8 +53,9 @@ unzip /tmp/payment.zip &>> LOGFILE
 VALIDATE $? "unzipping"
 
 cd /app 
+echo "changed dir"
 
-pip3.6 install -r requirements.txt &>> LOGFILE
+pip3.6 install -r requirements.txt  &>> LOGFILE
 VALIDATE $? "installing requirements"
 
 cp /root/shell_script_practice/components/payment.service  /etc/systemd/system/payment.service
