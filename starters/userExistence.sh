@@ -12,5 +12,4 @@ else
     exit 1
 fi
 }
-
-user_existence= check_user kannamma
+check_user kanna
