@@ -37,7 +37,7 @@ check_directory_existence (){
     fi
 }
 
-yum install python36 gcc python3-devel -y
+yum install python36 gcc python3-devel -y &>> LOGFILE
 VALIDATE $? "insatlling python.."
 
 check_user roboshop
