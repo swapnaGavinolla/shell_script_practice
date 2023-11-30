@@ -14,7 +14,7 @@
 # }
 
 user_existence= id nai &>> Logfile
-if [ $user_existence -ne 0 ]
+if [ $user_existence ne 0 ]
 then 
     echo "user already exits"
     exit 1
