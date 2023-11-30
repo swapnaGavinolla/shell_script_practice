@@ -30,7 +30,7 @@ check_directory_existence (){
     /$1 &>> LOGFILE
     if [ $? -ne 0 ]
     then
-        mkdir $1
+        mkdir $1 &>> logfile
         echo "$1 directory is created"
     else
         echo "$1 directory already exists"
@@ -48,12 +48,12 @@ check_user roboshop
 
 check_directory_existence /app
 
-unzip /tmp/catalogue.zip  &>> LOGFILE
+unzip /tmp/catalogue.zip  
 VALIDATE $? "unzipping"
 
 cd /app
 
-npm install &>> LOGFILE
+npm install 
 VALIDATE $? "npm"
 
 cp /root/shell_script_practice/components/catalogue.service /etc/systemd/system/catalogue.service
