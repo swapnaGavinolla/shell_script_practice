@@ -13,8 +13,10 @@
 #     echo "fjdgk"
 # }
 
-id nanu >> logfile
+user_existence = id ()
+
 id(){
+    id nanu >> logfile
     if [ $? -ne 0 ]
 then 
     useradd $1
