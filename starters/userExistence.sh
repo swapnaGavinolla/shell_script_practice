@@ -13,13 +13,15 @@
 #     echo "fjdgk"
 # }
 
-id shiv >> logfile
-if [ $? -ne 0 ]
+id nanu >> logfile
+id(){
+    if [ $? -ne 0 ]
 then 
-    useradd shiv
+    useradd $1
     echo "user added"
 
 else
     echo "already exits"
     exit 1
 fi
+}
