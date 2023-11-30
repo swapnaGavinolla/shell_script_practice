@@ -29,6 +29,6 @@ echo "enabled rabbitmq-server"
 systemctl start rabbitmq-server 
 echo "enabled rabbitmq-server"
 
-rabbitmqctl add_user roboshop roboshop123
+#rabbitmqctl add_user roboshop roboshop123
 
-rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"
+#rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"

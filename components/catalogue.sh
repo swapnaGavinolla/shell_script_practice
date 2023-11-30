@@ -79,5 +79,5 @@ VALIDATE $? "copied mongo repo"
 yum install mongodb-org-shell -y &>> LOGFILE
 VALIDATE $? "mongo-org"
 
-#mongo --host MONGODB-SERVER-IPADDRESS </app/schema/catalogue.js
+mongo --host 172.31.47.44 </app/schema/catalogue.js
 
