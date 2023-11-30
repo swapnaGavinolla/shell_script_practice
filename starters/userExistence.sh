@@ -13,12 +13,12 @@
 #     echo "fjdgk"
 # }
 
-user_existence= id nai &>> Logfile
+user_existence= id nami &>> Logfile
 if [ $? -ne 0 ]
 then 
     echo "user already exits"
     exit 1
-# else
-#     useradd nai
-#     echo "user nai is created"
+else
+    useradd nami
+    echo "user nami is created"
 fi
