@@ -16,7 +16,7 @@
 
 
 check(){
-    id $1 >> logfile
+    id $1 &>> logfile
     if [ $? -ne 0 ]
 then 
     useradd $1
