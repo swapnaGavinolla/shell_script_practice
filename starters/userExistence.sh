@@ -18,7 +18,4 @@ if [ $? -ne 0 ]
 then 
     echo "already exits"
     exit 1
-else
-    useradd nami
-    echo "user nami is created"
 fi
