@@ -13,10 +13,10 @@
 #     echo "fjdgk"
 # }
 
-user_existence = check ()
+user_existence = check nanuu
 
 check(){
-    id nanu >> logfile
+    id $1 >> logfile
     if [ $? -ne 0 ]
 then 
     useradd $1
