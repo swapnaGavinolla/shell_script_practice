@@ -17,7 +17,7 @@ id nani >> logfile
 if [ $? -ne 0 ]
 then 
     echo "user already exits"
-    exit 1
+    exit 
 else
     useradd nami
     echo "user nami is created"
