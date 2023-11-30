@@ -54,6 +54,9 @@ VALIDATE $? "package"
 
 mv target/shipping-1.0.jar shipping.jar
 
+cp /root/shell_script_practice/components/shipping.service /etc/systemd/system/shipping.service
+echo "copied shipping.service"
+
 systemctl daemon-reload
 echo "demon reloaded"
 
