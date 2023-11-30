@@ -13,7 +13,7 @@
 #     echo "fjdgk"
 # }
 
-user_existence= id nani
+user_existence= id nani &>> Logfile
 if [ $user_existence -ne 0 ]
 then 
     echo "user already exits"
