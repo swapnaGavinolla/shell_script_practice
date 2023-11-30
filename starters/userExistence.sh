@@ -13,7 +13,7 @@
 #     echo "fjdgk"
 # }
 
-user= check nanuu
+
 
 check(){
     id $1 >> logfile
@@ -27,3 +27,5 @@ else
     exit 1
 fi
 }
+
+user= check nanuu
