@@ -53,12 +53,12 @@ VALIDATE $? "downloading zip files"
 
 cd /app 
 
-unzip /tmp/catalogue.zip  
+unzip /tmp/catalogue.zip &>> LOGFILE
 VALIDATE $? "unzipping"
 
 cd /app
 
-npm install 
+npm install &>> LOGFILE
 VALIDATE $? "npm"
 
 cp /root/shell_script_practice/components/catalogue.service /etc/systemd/system/catalogue.service
