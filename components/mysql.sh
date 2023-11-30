@@ -17,6 +17,8 @@ fi
 yum module disable mysql -y &>>LOGFILE
 VALIDATE $? "disabling mysql"
 
+cp cp /root/shell_script_practice/components/mysql.repo /etc/yum.repos.d/mysql.repo
+
 yum install mysql-community-server -y &>>LOGFILE
 VALIDATE $? "installing mysql community server"
 
