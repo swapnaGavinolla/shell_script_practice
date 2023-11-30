@@ -13,4 +13,4 @@ else
 fi
 }
 
-user_existence= check renu
+user_existence= check_user renu
