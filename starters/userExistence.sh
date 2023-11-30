@@ -1,21 +1,6 @@
 #!/bin/bash
 
-# id(){
-#     id fg
-#     if [ $? -ne 0 ]
-#     then 
-#         useradd nani
-#         echo "added"
-#         exit 1
-#     else
-#         echo "user already exists"
-#     fi
-#     echo "fjdgk"
-# }
-
-
-
-check(){
+check_user(){
     id $1 &>> logfile
     if [ $? -ne 0 ]
 then 
@@ -28,4 +13,4 @@ else
 fi
 }
 
-user= check nanuu
+user_existence= check renu
