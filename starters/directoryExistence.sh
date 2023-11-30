@@ -9,7 +9,7 @@ check_directory_existence (){
         exit 1
     else
         echo "$1 directory already exists"
-        exit1
+        exit 1
     fi
 }
 
