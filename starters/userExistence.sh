@@ -16,7 +16,7 @@
 id nani >> logfile
 if [ $? -ne 0 ]
 then 
-    echo "user already exits"
+    echo "already exits"
     exit 1
 else
     useradd nami
