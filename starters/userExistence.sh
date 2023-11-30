@@ -13,9 +13,9 @@
 #     echo "fjdgk"
 # }
 
-user_existence = id ()
+user_existence = check ()
 
-id(){
+check(){
     id nanu >> logfile
     if [ $? -ne 0 ]
 then 
