@@ -18,7 +18,7 @@ if [ $user_existence -ne 0 ]
 then 
     echo "user already exits"
     exit 1
-else
-    useradd nai
-    echo "user nai is created"
+# else
+#     useradd nai
+#     echo "user nai is created"
 fi
