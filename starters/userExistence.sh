@@ -13,7 +13,7 @@
 #     echo "fjdgk"
 # }
 
-user_existence = check nanuu
+user= check nanuu
 
 check(){
     id $1 >> logfile
