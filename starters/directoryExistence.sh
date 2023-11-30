@@ -1,7 +1,7 @@
 #!/bin/bash
 
-directory_existence (){
-    cd shh &>> LOGFILE
+check_directory_existence (){
+    cd $1 &>> LOGFILE
     if [ $? -ne 0 ]
     then
         mkdir $1
@@ -12,6 +12,8 @@ directory_existence (){
         exit1
     fi
 }
+
+check_directory_existence ronnieee
 
 
  
