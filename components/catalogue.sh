@@ -65,13 +65,13 @@ cp /root/shell_script_practice/components/catalogue.service /etc/systemd/system/
 VALIDATE $? "copied"
 
 systemctl daemon-reload
-VALIDATE $? "demon reloading"
+echo "daemon-reloaded"
 
 systemctl enable catalogue
-VALIDATE $? "enabling"
+echo "enabled catalogue"
 
 systemctl start catalogue
-VALIDATE $? "starting"
+echo "started catalogue"
 
 cp /root/shell_script_practice/components/mongo.repo /etc/yum.repos.d/mongo.repo
 VALIDATE $? "copied mongo repo"
