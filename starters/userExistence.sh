@@ -13,7 +13,7 @@
 #     echo "fjdgk"
 # }
 
-id nani >> logfile
+id chooopu >> logfile
 if [ $? -ne 0 ]
 then 
     echo "already exits"
