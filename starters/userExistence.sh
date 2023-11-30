@@ -13,9 +13,13 @@
 #     echo "fjdgk"
 # }
 
-id chooopu >> logfile
+id shiv >> logfile
 if [ $? -ne 0 ]
 then 
+    useradd shiv
+    echo "user added"
+
+else
     echo "already exits"
     exit 1
 fi
