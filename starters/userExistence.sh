@@ -5,12 +5,12 @@ check_user(){
     if [ $? -ne 0 ]
 then 
     useradd $1
-    echo "user added"
+    echo "user $1 added"
 
 else
-    echo "already exits"
+    echo " $1 already exits"
     exit 1
 fi
 }
 
-user_existence= check_user renu
+user_existence= check_user kannamma
