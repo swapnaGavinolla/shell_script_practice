@@ -50,7 +50,7 @@ VALIDATE $? "npm source"
 cd /app 
 
 unzip /tmp/shipping.zip &>> LOGFILE
-VALIDATE $? " unziping"
+VALIDATE $? " unzi"
 
 cd /app
 
