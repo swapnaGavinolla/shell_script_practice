@@ -47,6 +47,11 @@ check_directory_existence /app
 curl -L -o /tmp/shipping.zip https://roboshop-builds.s3.amazonaws.com/shipping.zip &>> LOGFILE 
 VALIDATE $? "npm source"
 
+cd /app 
+
+unzip /tmp/shipping.zip &>> LOGFILE
+VALIDATE $? " unziping"
+
 cd /app
 
 mvn clean package &>> LOGFILE 
